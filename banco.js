@@ -34,7 +34,11 @@ class Banco {
 
     //versão do método com programação funcional
     encontrarConta(numero) {
-        return this.contas.find(conta => conta.numero === numero);
+        const numeroEncontrado = this.contas.find(conta => conta.numero === numero);
+
+        if (!numeroEncontrado) {
+            throw new Error()
+        }
     }
 
     //versão do método sem programação funcional

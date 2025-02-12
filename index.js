@@ -13,5 +13,11 @@ try {
     console.log('Erro ao Sacar!')
 }
 
+try {
+    meuBanco.encontrarConta(63423) 
+} catch {
+    console.log('Conta Inexistente!')
+}
+
 console.log(conta1.saldo); // Saída esperada: 1500
 console.log(conta2.saldo); // Saída esperada: 300
