@@ -10,11 +10,14 @@ class Conta {
     }
 
     sacar(valor) {
-        if (valor <= this.saldo) {
+        if (valor > this.saldo) {
+            throw new Error()
+        }
+        /*if (valor <= this.saldo) {
             this.saldo -= valor;
         } else {
             console.log("Saldo insuficiente para saque.");
-        }
+        }*/ //primeira versão do método saque
     }
 }
 // Modelo simplificado de Banco
