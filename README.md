@@ -1,5 +1,3 @@
-Claro! Aqui está o modelo de README com a adição das informações sobre a origem da atividade:
-
 ---
 
 # Laboratório 07 - Exceções em JavaScript
