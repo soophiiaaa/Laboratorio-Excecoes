@@ -6,7 +6,11 @@ class Conta {
     }
 
     depositar(valor) {
-        this.saldo += valor;
+        if (valor < 0) {
+            throw new Error()
+        } else {
+            this.saldo += valor
+        }
     }
 
     sacar(valor) {

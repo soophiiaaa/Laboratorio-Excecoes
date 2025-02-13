@@ -1,4 +1,3 @@
-const e = require('express');
 const { Conta, Banco } = require('./banco')
 // Criando um novo banco
 const meuBanco = new Banco();
@@ -18,6 +17,12 @@ try {
     meuBanco.encontrarConta(63423) 
 } catch {
     console.log('Conta Inexistente!')
+}
+
+try {
+    conta1.depositar(-500)
+} catch (e) {
+    console.log(`Error: ${e}`)
 }
 
 console.log(conta1.saldo); // Saída esperada: 1500
