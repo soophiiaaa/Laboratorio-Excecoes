@@ -1,3 +1,4 @@
+const e = require('express');
 const { Conta, Banco } = require('./banco')
 // Criando um novo banco
 const meuBanco = new Banco();
@@ -9,8 +10,8 @@ conta1.depositar(500);
 
 try {
     conta2.sacar(600);
-} catch {
-    console.log('Erro ao Sacar!')
+} catch (e) {
+    console.log(e)
 }
 
 try {
