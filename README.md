@@ -2,6 +2,8 @@
 
 # Laboratório 07 - Exceções em JavaScript
 
+✅ **Atividade concluída em 20/02/2025**
+
 ## Proposta da Atividade
 
 Esta atividade foi proposta pelo **Professor Ricardo Rubens** do **Instituto Federal de Alagoas - Campus Maceió**, como parte da disciplina de **Programação Orientada a Objetos (POO)** no curso de **Desenvolvimento de Sistemas**.
