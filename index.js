@@ -31,5 +31,12 @@ try {
     console.log(`ERRO: ${e}`)
 }
 
+try {
+    const conta4 = meuBanco.criarConta("abcde", "100")
+    conta4.verificaValorInvalido()
+} catch (e) {
+    console.log(`ERRO: ${e}`)
+}
+
 console.log(conta1.saldo); // Saída esperada: 1500
 console.log(conta2.saldo); // Saída esperada: 300

@@ -23,6 +23,12 @@ class Conta {
             console.log("Saldo insuficiente para saque.");
         }*/ //primeira versão do método saque
     }
+
+    verificaValorInvalido() {
+        if (typeof this.numero !== "number" || typeof this.saldo !== "number") {
+            throw new Error('Valores Inválidos Inseridos!')
+        }
+    }
 }
 // Modelo simplificado de Banco
 class Banco {
