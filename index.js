@@ -25,5 +25,11 @@ try {
     console.log(`Error: ${e}`)
 }
 
+try {
+    const conta3 = meuBanco.criarConta(54321, 100)
+} catch (e) {
+    console.log(`ERRO: ${e}`)
+}
+
 console.log(conta1.saldo); // Saída esperada: 1500
 console.log(conta2.saldo); // Saída esperada: 300

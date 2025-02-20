@@ -32,8 +32,13 @@ class Banco {
 
     criarConta(numero, saldoInicial) {
         const novaConta = new Conta(numero, saldoInicial);
-        this.contas.push(novaConta);
-        return novaConta;
+        const contaIgual = this.contas.find((i) => i.numero === novaConta.numero);
+
+        if (contaIgual === undefined) {
+            this.contas.push(novaConta);
+            return novaConta;
+        }
+        throw new Error('Conta já Existente!')
     }
 
     //versão do método com programação funcional
